@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>Password Generator</h1>
+            <input type="text" id="box">
+            <i class="fa-regular fa-copy" id="copy"></i>
+            <div class="pass-container">
+                <div class="password-div">
+                    <label>Password length</label>
+                    <input type="range" id="range-selector" min="0" max="25">
+                    <p id="range-number">20</p>
+                </div>
+                <label>Include UpperCase</label>
+                <input type="checkbox" id="upper-case">
+                <label>Include LowerCase</label>
+                <input type="checkbox" id="lower-case">
+                <label>Include Numbers</label>
+                <input type="checkbox" id="numbers">
+                <label>Include Symbols</label>
+                <input type="checkbox" id="symbols">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
