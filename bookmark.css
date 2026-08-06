@@ -1,0 +1,71 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+.main{
+  width: 500px;
+  box-shadow: 0px 1px 2px black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 30px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input[type="text"]{
+  padding: 10px;
+  outline: none;
+  background-color: transparent;
+  border: 0.5px solid gray;
+}
+.content h1{
+  color: rgb(0, 155, 0);
+}
+#btn{
+ padding: 10px;
+ outline: none;
+ background-color: green; 
+ border: none;
+ color: white;
+ border-radius: 10px;
+}
+.add-bookmark{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border: 0.5px solid gray;
+  padding: 10px 0px;
+  background-color: rgba(201, 201, 201, 0.432);
+}
+.add-bookmark a{
+  color: green;
+  font-size: 1.3rem;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+#btn-1{
+   padding: 10px;
+ outline: none;
+ background-color: red; 
+ border: none;
+ color: white;
+ border-radius: 5px;
+ font-size: 1rem;
+ margin-right: 5px;
+}
