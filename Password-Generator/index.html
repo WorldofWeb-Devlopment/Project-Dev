@@ -16,12 +16,12 @@
         <div class="container">
             <h1>Password Generator</h1>
             <input type="text" id="box">
-            <i class="fa-regular fa-copy" id="copy"></i>
+            <i class="fa-regular fa-copy" id="copy-btn"></i>
             <div class="pass-container">
                 <div class="password-div">
                     <label>Password length</label>
-                    <input type="range" id="range-selector" min="0" max="25">
-                    <p id="range-number">20</p>
+                    <input type="range" id="silder-control" min="6" max="25" value="15">
+                    <p id="slider-length">20</p>
                 </div>
                 <label>Include UpperCase</label>
                 <input type="checkbox" id="upper-case">
@@ -32,6 +32,15 @@
                 <label>Include Symbols</label>
                 <input type="checkbox" id="symbols">
             </div>
+            <div class="btn">
+                <i class="fa-solid fa-key"></i>
+                <p id="password-btn">Generate Password</p>
+            </div>
+            <div class="indicator">
+                <p>Password Strength:</p>
+                <span id="password-strength">Medium</span>
+            </div>
+            <div class="indicator-bar"></div>
         </div>
     </section>
 
