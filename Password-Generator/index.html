@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
@@ -15,22 +20,36 @@
     <section>
         <div class="container">
             <h1>Password Generator</h1>
-            <input type="text" id="box">
-            <i class="fa-regular fa-copy" id="copy-btn"></i>
+            <div class="input-field">
+                <input type="text" id="box">
+                <i class="fa-regular fa-copy" id="copy-btn"></i>
+            </div>
             <div class="pass-container">
                 <div class="password-div">
-                    <label>Password length</label>
-                    <input type="range" id="silder-control" min="6" max="25" value="15">
-                    <p id="slider-length">20</p>
+                    <div class="silder">
+                        <label>Password length</label>
+                        <input type="range" id="silder-control" min="6" max="25" value="15">
+                    </div>
+                    <span id="slider-length">20</span>
                 </div>
-                <label>Include UpperCase</label>
-                <input type="checkbox" id="upper-case">
-                <label>Include LowerCase</label>
-                <input type="checkbox" id="lower-case">
-                <label>Include Numbers</label>
-                <input type="checkbox" id="numbers">
-                <label>Include Symbols</label>
-                <input type="checkbox" id="symbols">
+                <div class="check-box">
+                    <div class="upper-case">
+                        <label>Include UpperCase</label>
+                        <input type="checkbox" id="upper-case">
+                    </div>
+                    <div class="lower-case">
+                        <label>Include LowerCase</label>
+                        <input type="checkbox" id="lower-case">
+                    </div>
+                    <div class="numbers">
+                        <label>Include Numbers</label>
+                        <input type="checkbox" id="numbers">
+                    </div>
+                    <div class="symbol">
+                        <label>Include Symbols</label>
+                        <input type="checkbox" id="symbols">
+                    </div>
+                </div>
             </div>
             <div class="btn">
                 <i class="fa-solid fa-key"></i>
@@ -40,7 +59,9 @@
                 <p>Password Strength:</p>
                 <span id="password-strength">Medium</span>
             </div>
-            <div class="indicator-bar"></div>
+            <div class="indicator-bg">
+                <div class="indicator-bar"></div>
+            </div>
         </div>
     </section>
 
