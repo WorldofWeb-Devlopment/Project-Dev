@@ -35,6 +35,7 @@ function checkpassword() {
     !hassymbolsChecked
   ) {
     alert("Pleasen Check Any CheckBox");
+    return;
   }
 
   const newPassword = createRandomPassword(
@@ -74,3 +75,7 @@ function checkpassword() {
 
   }
 }
+
+copyBtn.addEventListener("click",()=>{
+    navigator.clipboard.writeText(inputbox.value)
+})
