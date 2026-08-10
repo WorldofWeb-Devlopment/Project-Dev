@@ -17,40 +17,30 @@
 </head>
 
 <body>
-    <section>
-        <div class="container">
-            <div class="main">
-                <div class="task-bar">
-                    <i class="fa-solid fa-check"></i>
-                    <span>My Tasks</span>
-                </div>
-                    <div class="date">
-                        <p id="date">Date</p>
-                    </div>
-            </div>
-            
-            <div class="input-box">
-                <input type="text" id="box" placeholder="What do You need to do ?">
-                <button id="btn">+</button>
-            </div>
-            <div class="tabs">
-                <button class="tab-btn active">All</button>
-                <button class="tab-btn">Active</button>
-                <button class="tab-btn">Completed</button>
-            </div>
-            <div class="content">
-                <p id="content-text first" class="tab-content">No Task Here</p>
-            </div>
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-check"></i>
+            My Tasks</h1>
+            <p id="date">Date</p>
+        </header>
+        <div class="input-todo">
+            <input type="text"  id="box" placeholder="What do you need to do ?">
+            <button id="add-todo">+</button>
         </div>
-        <div class="footer">
-            <div class="left-side">
-                <span id="items-left">0</span>
-                <p>Items Left</p>
-            </div>
-            <p>Clear completed</p>
+        <div class="todos">
+            <span>All</span>
+            <span>Active</span>
+            <span>Completed</span>
         </div>
+        <div class="todo-conatiner">
+            <i class="fa-solid fa-clipboard"></i>
+            <p>No tasks here yet</p>
         </div>
-    </section>
+        <footer>
+            <p id="items-count">0 items left</p>
+            <p id="delete-btn">Clear completed</p>
+        </footer>
+    </div>
     <script src="./todo.js"></script>
 </body>
 
